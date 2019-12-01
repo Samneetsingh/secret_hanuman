@@ -34,7 +34,7 @@ def sendEMail(subject, emailFrom, emailTo, message):
     server = smtplib.SMTP(GOOGLE_SERVER['host'], GOOGLE_SERVER['port'])
     server.starttls()
     server.ehlo()
-    server.login("samneetd@gmail.com", "9811158933")
+    server.login("samneetd@gmail.com", "")
     server.sendmail(emailFrom, emailTo, msg.as_string())
     server.quit()
 
